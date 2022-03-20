@@ -1,4 +1,4 @@
-package com.newhope.trido.voter;
+package com.newhope.trido.voter.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.newhope.trido.voter.R;
 
 public class MainActivity extends AppCompatActivity {
 

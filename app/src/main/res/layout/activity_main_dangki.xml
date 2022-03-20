@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient1"
-    tools:context=".Main_dangki">
+    tools:context=".activity.Main_dangki">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/g1_dk"

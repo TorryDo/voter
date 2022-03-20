@@ -1,4 +1,4 @@
-package com.newhope.trido.voter.line_12345;
+package com.newhope.trido.voter.fragment;
 
 import android.content.Context;
 import android.content.Intent;
@@ -23,11 +23,10 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.newhope.trido.voter.BOCHUYENDOI.home_adapter;
-import com.newhope.trido.voter.DOITUONG.topic_home;
-import com.newhope.trido.voter.Main_home;
+import com.newhope.trido.voter.adapter.home_adapter;
+import com.newhope.trido.voter.model.topic_home;
 import com.newhope.trido.voter.R;
-import com.newhope.trido.voter.add_topic;
+import com.newhope.trido.voter.activity.add_topic;
 
 import java.util.ArrayList;
 

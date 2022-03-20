@@ -1,4 +1,4 @@
-package com.newhope.trido.voter.line_12345;
+package com.newhope.trido.voter.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

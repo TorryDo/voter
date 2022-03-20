@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:background="#000000"
     android:layout_height="match_parent"
-    tools:context=".Main_small_comment">
+    tools:context=".activity.Main_small_comment">
     <LinearLayout
         android:id="@+id/line1_item_scmt"
         app:layout_constraintTop_toTopOf="parent"

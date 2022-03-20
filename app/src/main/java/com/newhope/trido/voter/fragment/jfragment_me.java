@@ -1,4 +1,4 @@
-package com.newhope.trido.voter.line_12345;
+package com.newhope.trido.voter.fragment;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -23,8 +23,8 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.newhope.trido.voter.DOITUONG.userProfile;
-import com.newhope.trido.voter.Main_home;
+import com.newhope.trido.voter.model.userProfile;
+import com.newhope.trido.voter.activity.Main_home;
 import com.newhope.trido.voter.R;
 
 import de.hdodenhof.circleimageview.CircleImageView;

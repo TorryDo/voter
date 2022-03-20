@@ -1,6 +1,5 @@
-package com.newhope.trido.voter;
+package com.newhope.trido.voter.activity;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,7 +27,8 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageMetadata;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.newhope.trido.voter.DOITUONG.topic_home;
+import com.newhope.trido.voter.R;
+import com.newhope.trido.voter.model.topic_home;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;

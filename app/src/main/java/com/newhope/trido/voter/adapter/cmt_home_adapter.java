@@ -1,4 +1,4 @@
-package com.newhope.trido.voter.BOCHUYENDOI;
+package com.newhope.trido.voter.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,9 +12,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.newhope.trido.voter.DOITUONG.cmt_home;
-import com.newhope.trido.voter.Main_comment;
-import com.newhope.trido.voter.Main_small_comment;
+import com.newhope.trido.voter.model.cmt_home;
+import com.newhope.trido.voter.activity.Main_comment;
+import com.newhope.trido.voter.activity.Main_small_comment;
 import com.newhope.trido.voter.R;
 
 import java.util.List;

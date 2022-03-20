@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".add_topic">
+    tools:context=".activity.add_topic">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gleft_add"

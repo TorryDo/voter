@@ -1,4 +1,4 @@
-package com.newhope.trido.voter;
+package com.newhope.trido.voter.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -17,11 +17,12 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.newhope.trido.voter.line_12345.jfragment_home;
-import com.newhope.trido.voter.line_12345.jfragment_me;
-import com.newhope.trido.voter.line_12345.jfragment_mess;
-import com.newhope.trido.voter.line_12345.jfragment_notify;
-import com.newhope.trido.voter.line_12345.jfragment_top;
+import com.newhope.trido.voter.R;
+import com.newhope.trido.voter.fragment.jfragment_home;
+import com.newhope.trido.voter.fragment.jfragment_me;
+import com.newhope.trido.voter.fragment.jfragment_mess;
+import com.newhope.trido.voter.fragment.jfragment_notify;
+import com.newhope.trido.voter.fragment.jfragment_top;
 
 public class Main_home extends AppCompatActivity {
 

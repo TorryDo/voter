@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:background="#000000"
     android:layout_height="match_parent"
-    tools:context=".Main_comment">
+    tools:context=".activity.Main_comment">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gbot_cmt"

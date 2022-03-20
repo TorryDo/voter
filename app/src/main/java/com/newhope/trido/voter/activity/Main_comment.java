@@ -1,4 +1,4 @@
-package com.newhope.trido.voter;
+package com.newhope.trido.voter.activity;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,8 +20,9 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.newhope.trido.voter.BOCHUYENDOI.cmt_home_adapter;
-import com.newhope.trido.voter.DOITUONG.cmt_home;
+import com.newhope.trido.voter.R;
+import com.newhope.trido.voter.adapter.cmt_home_adapter;
+import com.newhope.trido.voter.model.cmt_home;
 
 import java.util.ArrayList;
 import java.util.Calendar;

@@ -14,12 +14,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main_small_comment"></activity>
-        <activity android:name=".Main_comment" />
-        <activity android:name=".add_topic" />
-        <activity android:name=".Main_dangki" />
-        <activity android:name=".Main_home" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.Main_small_comment"></activity>
+        <activity android:name=".activity.Main_comment" />
+        <activity android:name=".activity.add_topic" />
+        <activity android:name=".activity.Main_dangki" />
+        <activity android:name=".activity.Main_home" />
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

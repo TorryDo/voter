@@ -1,4 +1,4 @@
-package com.newhope.trido.voter.DOITUONG;
+package com.newhope.trido.voter.model;
 
 public class userProfile {
     private String nickname;

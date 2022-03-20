@@ -1,4 +1,4 @@
-package com.newhope.trido.voter.BOCHUYENDOI;
+package com.newhope.trido.voter.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -30,10 +30,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.newhope.trido.voter.DOITUONG.islike;
-import com.newhope.trido.voter.DOITUONG.topic_home;
-import com.newhope.trido.voter.Main_comment;
-import com.newhope.trido.voter.Main_home;
+import com.newhope.trido.voter.model.islike;
+import com.newhope.trido.voter.model.topic_home;
+import com.newhope.trido.voter.activity.Main_comment;
+import com.newhope.trido.voter.activity.Main_home;
 import com.newhope.trido.voter.R;
 
 import java.io.IOException;

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/gradient1"
     android:layout_height="match_parent"
-    tools:context=".Main_home">
+    tools:context=".activity.Main_home">
 
 
     <androidx.constraintlayout.widget.Guideline
