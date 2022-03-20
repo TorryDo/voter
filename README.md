@@ -6,7 +6,7 @@ Android - Photo sharing social network
 - You should not view the source code for the sake of humanity :)
 
 ## Time Consuming
-- Summer 2019 (may be 1 month, I dont remember actually)
+- Summer 2019 (1 month maybe, I dont remember actually)
 
 ## Demo
 
