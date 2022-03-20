@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="30dp"
+    android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/g1_item_home"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.04"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/g2_item_home"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.96"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/g3_item_home"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.02"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/g4_item_home"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.98"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <androidx.cardview.widget.CardView
+                app:layout_constraintTop_toTopOf="@id/g3_item_home"
+                app:layout_constraintRight_toLeftOf="@id/g2_item_home"
+                app:layout_constraintLeft_toRightOf="@id/g1_item_home"
+                app:layout_constraintBottom_toTopOf="@id/g4_item_home"
+                app:cardCornerRadius="15dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint1_item_home"
+                android:background="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/txtkeys_item_home"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/g5_item_home"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.09"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/g6_item_home"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.19"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gbot_item_home"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.91"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/g6_item_home"
+                    app:layout_constraintBottom_toTopOf="@id/g5_item_home"
+                    android:id="@+id/circle_item_home"
+                    android:src="@drawable/ic_launcher_background"
+                    app:civ_border_color="@color/cam_sang"
+                    app:civ_border_width="2dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+                <TextView
+                    android:id="@+id/txtKeys_item_home"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+                <TextView
+                    android:id="@+id/txtTen_item_home"
+                    app:layout_constraintLeft_toRightOf="@id/g6_item_home"
+                    android:textSize="15dp"
+                    android:fontFamily="sans-serif"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/g5_item_home"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#ffffff"
+                    android:text="tên của tôi"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+                <ImageView
+                    android:id="@+id/image_item_home"
+                    app:layout_constraintTop_toBottomOf="@id/g5_item_home"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/gbot_item_home"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
+                <View
+                    android:id="@+id/vbot_item_home"
+                    app:layout_constraintTop_toBottomOf="@id/gbot_item_home"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/cam_sang"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/lineMenu_item_home"
+                    app:layout_constraintTop_toBottomOf="@id/vbot_item_home"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:id="@+id/txtlike_item_home"
+                        android:text="like"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:visibility="visible"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/cam_sang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/cam_sang"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/txtcomment_item_home"
+                        android:text="comment"
+                        android:gravity="center"
+                        android:textColor="@color/cam_sang"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/cam_sang"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/txtsave_item_home"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/cam_sang"
+                        android:text="save"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

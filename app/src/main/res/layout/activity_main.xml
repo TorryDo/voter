@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g1_edit"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g2_edit"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@+id/g3_edit"
+        app:layout_constraintGuide_percent="0.42"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g1_card_bottom"
+        app:layout_constraintGuide_percent="0.55"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g1_card_top"
+        app:layout_constraintGuide_percent="0.2"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_dangnhap"
+        app:layout_constraintRight_toLeftOf="@id/g2_edit"
+        app:layout_constraintLeft_toRightOf="@id/g1_edit"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintTop_toBottomOf="@id/g1_card_top"
+        app:layout_constraintBottom_toTopOf="@id/g1_card_bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/edit_taikhoan"
+                android:hint="  số điện thoại/Email"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/acc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edit_pass"
+                android:hint="  mật khẩu"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/keywordss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btdangnhap"
+                android:layout_gravity="left"
+                android:text="Đăng Nhập"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_dn"/>
+
+                <Button
+                    android:id="@+id/btdangki"
+                    android:layout_weight="0.1"
+                    android:text="Đăng Kí"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/bt_dk" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_fb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/bt_fb"
+                android:text="Facebook"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

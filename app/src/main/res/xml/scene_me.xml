@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    >
+
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/end"
+        motion:duration="800">
+        <OnSwipe
+            motion:touchAnchorId="@id/view_me"
+            motion:touchAnchorSide="top"
+            motion:dragDirection="dragUp" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/vlinetop_me"
+            motion:layout_constraintTop_toBottomOf="@id/avatar_me"
+            motion:layout_constraintRight_toLeftOf="@id/gright_me"
+            motion:layout_constraintLeft_toRightOf="@id/gleft_me"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/cam_sang"
+            android:layout_width="0dp"
+            android:layout_height="2dp"/>
+
+        <Constraint
+            android:id="@+id/txt_nickname_me"
+            android:text="Tên Voter :"
+            motion:layout_constraintRight_toRightOf="@id/vlinetop_me"
+            motion:layout_constraintTop_toBottomOf="@id/vlinetop_me"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/cam_sang"
+            motion:layout_constraintLeft_toLeftOf="@id/vlinetop_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Constraint
+            android:id="@+id/edit_nickname_me"
+            android:hint="Tên Voter :"
+            android:visibility="invisible"
+            motion:layout_constraintRight_toRightOf="@id/vlinetop_me"
+            motion:layout_constraintTop_toBottomOf="@id/vlinetop_me"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/cam_sang"
+            android:textColorHint="@color/cam_sang"
+            motion:layout_constraintLeft_toLeftOf="@id/vlinetop_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Constraint
+            android:id="@+id/txt_mail_me"
+            android:text="email :"
+            motion:layout_constraintRight_toRightOf="@id/vlinetop_me"
+            motion:layout_constraintTop_toBottomOf="@id/txt_nickname_me"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/cam_sang"
+            motion:layout_constraintLeft_toLeftOf="@id/txt_nickname_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Constraint
+            android:id="@+id/edit_mail_me"
+            android:hint="email :"
+            android:visibility="invisible"
+            motion:layout_constraintRight_toRightOf="@id/vlinetop_me"
+            motion:layout_constraintTop_toBottomOf="@id/edit_nickname_me"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/cam_sang"
+            android:textColorHint="@color/cam_sang"
+            motion:layout_constraintLeft_toLeftOf="@id/txt_nickname_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Constraint
+            android:id="@+id/txt_sdt_me"
+            motion:layout_constraintTop_toBottomOf="@id/txt_mail_me"
+            motion:layout_constraintRight_toRightOf="@id/vlinetop_me"
+            motion:layout_constraintLeft_toLeftOf="@id/txt_mail_me"
+            android:text="Số điện thoại : (+84)"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/cam_sang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Constraint
+            android:id="@+id/edit_sdt_me"
+            android:visibility="invisible"
+            motion:layout_constraintTop_toBottomOf="@id/edit_mail_me"
+            motion:layout_constraintRight_toRightOf="@id/vlinetop_me"
+            motion:layout_constraintLeft_toLeftOf="@id/txt_mail_me"
+            android:hint="Số điện thoại : (+84)"
+            android:textColorHint="@color/cam_sang"
+            android:textColor="@color/cam_sang"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Constraint
+            android:id="@+id/vline1_me"
+            motion:layout_constraintTop_toBottomOf="@id/edit_sdt_me"
+            motion:layout_constraintRight_toRightOf="@id/vlinetop_me"
+            motion:layout_constraintLeft_toLeftOf="@id/vlinetop_me"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/cam_sang"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+        <Constraint
+            android:id="@+id/txt_realname_me"
+            motion:layout_constraintTop_toBottomOf="@id/vline1_me"
+            motion:layout_constraintLeft_toLeftOf="@id/vline1_me"
+            motion:layout_constraintRight_toRightOf="@id/vline1_me"
+            android:text="Tên thật :"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/cam_sang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Constraint
+            android:id="@+id/edit_realname_me"
+            motion:layout_constraintTop_toBottomOf="@id/vline1_me"
+            motion:layout_constraintLeft_toLeftOf="@id/vline1_me"
+            motion:layout_constraintRight_toRightOf="@id/vline1_me"
+            android:hint="Tên thật :"
+            android:textColorHint="@color/cam_sang"
+            android:textColor="@color/cam_sang"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Constraint
+            android:id="@+id/txt_place_me"
+            motion:layout_constraintTop_toBottomOf="@id/txt_realname_me"
+            motion:layout_constraintLeft_toLeftOf="@id/txt_realname_me"
+            motion:layout_constraintRight_toRightOf="@id/txt_realname_me"
+            android:text="địa chỉ :"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/cam_sang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Constraint
+            android:id="@+id/edit_place_me"
+            motion:layout_constraintTop_toBottomOf="@id/edit_realname_me"
+            motion:layout_constraintLeft_toLeftOf="@id/vline1_me"
+            motion:layout_constraintRight_toRightOf="@id/vline1_me"
+            android:hint="địa chỉ :"
+            android:textColorHint="@color/cam_sang"
+            android:textColor="@color/cam_sang"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Constraint
+            android:id="@+id/txt_sex_me"
+            motion:layout_constraintTop_toBottomOf="@id/txt_place_me"
+            motion:layout_constraintLeft_toLeftOf="@id/txt_place_me"
+            motion:layout_constraintRight_toRightOf="@id/txt_place_me"
+            android:text="giới tính :"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/cam_sang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Constraint
+            android:id="@+id/edit_sex_me"
+            motion:layout_constraintTop_toBottomOf="@id/edit_place_me"
+            motion:layout_constraintLeft_toLeftOf="@id/vline1_me"
+            motion:layout_constraintRight_toRightOf="@id/vline1_me"
+            android:hint="giới tính :"
+            android:textColorHint="@color/cam_sang"
+            android:textColor="@color/cam_sang"
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <!--constrain 1 ở trên-->
+        <Constraint
+            android:text="Cập Nhật"
+            android:id="@+id/bt_update"
+            android:fontFamily="sans-serif"
+            motion:layout_constraintTop_toBottomOf="parent"
+            android:background="@drawable/bt_update_profile"
+            motion:layout_constraintRight_toRightOf="@id/gright_me"
+            motion:layout_constraintLeft_toLeftOf="@id/gleft_me"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Constraint
+            android:id="@+id/txt_camket_me"
+            motion:layout_constraintTop_toTopOf="@id/bt_update"
+            motion:layout_constraintRight_toRightOf="@id/gright_me"
+            motion:layout_constraintLeft_toLeftOf="@id/gleft_me"
+            android:text="@string/cam_ket"
+            android:textColor="@color/cam_sang"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+        <Constraint
+            android:id="@+id/img_background_me"
+            android:src="@drawable/add_icon_150dp"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintBottom_toTopOf="@id/gcenter_me"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:background="#000000"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <Constraint
+            android:id="@+id/view_me"
+            motion:layout_constraintTop_toBottomOf="@id/gtopcenter_me"
+            motion:layout_constraintRight_toRightOf="@id/gright_me"
+            motion:layout_constraintLeft_toLeftOf="@id/gleft_me"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:background="#000000"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <Constraint
+            android:id="@+id/avatar_me"
+            android:src="@drawable/ic_launcher_background"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:civ_border_color="@color/cam_sang"
+            motion:civ_border_width="1dp"
+            motion:layout_constraintTop_toTopOf="@id/gtopcenter_me"
+            motion:layout_constraintBottom_toBottomOf="@id/gtopcenter_me"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+    </ConstraintSet>
+
+    <!--rank giới ///////////////////////////////////////////////////////////////////-->
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/vlinetop_me"
+            motion:layout_constraintTop_toBottomOf="@id/avatar_me"
+            motion:layout_constraintRight_toLeftOf="@id/gright_me"
+            motion:layout_constraintLeft_toRightOf="@id/gleft_me"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/cam_sang"
+            android:layout_width="0dp"
+            android:layout_height="2dp"/>
+
+        <Constraint
+            android:id="@+id/txt_nickname_me"
+            motion:layout_constraintRight_toRightOf="@id/vlinetop_me"
+            motion:layout_constraintTop_toBottomOf="@id/vlinetop_me"
+            android:textColor="@color/cam_sang"
+            android:visibility="invisible"
+            motion:layout_constraintLeft_toLeftOf="@id/vlinetop_me"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <Constraint
+            android:id="@+id/edit_nickname_me"
+            android:hint="Tên Voter :"
+            motion:layout_constraintRight_toRightOf="@id/vlinetop_me"
+            motion:layout_constraintTop_toBottomOf="@id/vlinetop_me"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/cam_sang"
+            android:textColorHint="@color/cam_sang"
+            motion:layout_constraintLeft_toLeftOf="@id/vlinetop_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Constraint
+            android:id="@+id/txt_mail_me"
+            motion:layout_constraintRight_toRightOf="@id/vlinetop_me"
+            motion:layout_constraintTop_toBottomOf="@id/txt_nickname_me"
+            android:textColor="@color/cam_sang"
+            motion:layout_constraintLeft_toLeftOf="@id/txt_nickname_me"
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <Constraint
+            android:id="@+id/edit_mail_me"
+            android:hint="email :"
+            motion:layout_constraintRight_toRightOf="@id/vlinetop_me"
+            motion:layout_constraintTop_toBottomOf="@id/edit_nickname_me"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/cam_sang"
+            android:textColorHint="@color/cam_sang"
+            motion:layout_constraintLeft_toLeftOf="@id/txt_nickname_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Constraint
+            android:id="@+id/txt_sdt_me"
+            motion:layout_constraintTop_toBottomOf="@id/txt_mail_me"
+            motion:layout_constraintRight_toRightOf="@id/vlinetop_me"
+            motion:layout_constraintLeft_toLeftOf="@id/txt_mail_me"
+            android:textColor="@color/cam_sang"
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <Constraint
+            android:id="@+id/edit_sdt_me"
+            motion:layout_constraintTop_toBottomOf="@id/edit_mail_me"
+            motion:layout_constraintRight_toRightOf="@id/vlinetop_me"
+            motion:layout_constraintLeft_toLeftOf="@id/txt_mail_me"
+            android:hint="Số điện thoại : (+84)"
+            android:textColorHint="@color/cam_sang"
+            android:textColor="@color/cam_sang"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Constraint
+            android:id="@+id/vline1_me"
+            motion:layout_constraintTop_toBottomOf="@id/edit_sdt_me"
+            motion:layout_constraintRight_toRightOf="@id/vlinetop_me"
+            motion:layout_constraintLeft_toLeftOf="@id/vlinetop_me"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/cam_sang"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+
+        <Constraint
+            android:id="@+id/txt_realname_me"
+            motion:layout_constraintTop_toBottomOf="@id/vline1_me"
+            motion:layout_constraintLeft_toLeftOf="@id/vline1_me"
+            motion:layout_constraintRight_toRightOf="@id/vline1_me"
+            android:textColor="@color/cam_sang"
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <Constraint
+            android:id="@+id/edit_realname_me"
+            motion:layout_constraintTop_toBottomOf="@id/vline1_me"
+            motion:layout_constraintLeft_toLeftOf="@id/vline1_me"
+            motion:layout_constraintRight_toRightOf="@id/vline1_me"
+            android:hint="Tên thật :"
+            android:textColorHint="@color/cam_sang"
+            android:textColor="@color/cam_sang"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Constraint
+            android:id="@+id/txt_place_me"
+            motion:layout_constraintTop_toBottomOf="@id/txt_realname_me"
+            motion:layout_constraintLeft_toLeftOf="@id/txt_realname_me"
+            motion:layout_constraintRight_toRightOf="@id/txt_realname_me"
+            android:textColor="@color/cam_sang"
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <Constraint
+            android:id="@+id/edit_place_me"
+            motion:layout_constraintTop_toBottomOf="@id/edit_realname_me"
+            motion:layout_constraintLeft_toLeftOf="@id/vline1_me"
+            motion:layout_constraintRight_toRightOf="@id/vline1_me"
+            android:hint="địa chỉ :"
+            android:textColorHint="@color/cam_sang"
+            android:textColor="@color/cam_sang"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Constraint
+            android:id="@+id/txt_sex_me"
+            motion:layout_constraintTop_toBottomOf="@id/txt_place_me"
+            motion:layout_constraintRight_toRightOf="@id/txt_place_me"
+            motion:layout_constraintLeft_toLeftOf="@id/txt_place_me"
+            android:visibility="invisible"
+            android:textColor="@color/cam_sang"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <Constraint
+            android:id="@+id/edit_sex_me"
+            motion:layout_constraintTop_toBottomOf="@id/edit_place_me"
+            motion:layout_constraintLeft_toLeftOf="@id/vline1_me"
+            motion:layout_constraintRight_toRightOf="@id/vline1_me"
+            android:hint="giới tính :"
+            android:textColorHint="@color/cam_sang"
+            android:textColor="@color/cam_sang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <!--constraint2 là ở trên-->
+
+        <Constraint
+            android:id="@+id/bt_update"
+            android:text="Cập Nhật"
+            android:fontFamily="sans-serif"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/bt_update_profile"
+            motion:layout_constraintRight_toRightOf="@id/gright_me"
+            motion:layout_constraintLeft_toLeftOf="@id/gleft_me"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Constraint
+            android:id="@+id/txt_camket_me"
+            motion:layout_constraintBottom_toTopOf="@id/bt_update"
+            motion:layout_constraintRight_toRightOf="@id/gright_me"
+            motion:layout_constraintLeft_toLeftOf="@id/gleft_me"
+            android:text="@string/cam_ket"
+            android:textColor="@color/cam_sang"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+        <Constraint
+            android:id="@+id/view_me"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:background="#000000"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+        <Constraint
+            android:id="@+id/img_background_me"
+            android:src="@drawable/add_icon_150dp"
+            motion:layout_constraintBottom_toTopOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            android:background="#000000"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            />
+        <Constraint
+            android:id="@+id/avatar_me"
+            android:src="@drawable/ic_launcher_background"
+            motion:civ_border_color="@color/cam_sang"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            motion:civ_border_width="1dp"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </ConstraintSet>
+
+</MotionScene>

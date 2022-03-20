@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="xanh_sang_dam">#4Ae6F8</color>
+    <color name="tim_xanh">#4d5aaf</color>
+    <color name="cam_sang">#E75E44</color>
+    <color name="xanh_sang">#b4D1e1</color>
+    <color name="cam_toi">#B14430</color>
+</resources>

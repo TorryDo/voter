@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "412695131749",
+    "firebase_url": "https://voter-voter.firebaseio.com",
+    "project_id": "voter-voter",
+    "storage_bucket": "voter-voter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412695131749:android:9a576818d93f688f",
+        "android_client_info": {
+          "package_name": "com.newhope.trido.voter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412695131749-dkiqemgdou6dsfrcoo7p71dsrvpihkht.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.newhope.trido.voter",
+            "certificate_hash": "1599cc8e1e93293a529acaf2d23cb67f9100a700"
+          }
+        },
+        {
+          "client_id": "412695131749-vbljgpvs2ifle1nsdst3i076qc3bfsg0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCbuGNho6SYC8sSNSpiqzPekCDw7JQpUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412695131749-vbljgpvs2ifle1nsdst3i076qc3bfsg0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
