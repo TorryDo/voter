@@ -2,7 +2,7 @@
 Android - Photo sharing social network 
 
 ## Note
-- This project is my first-big-project when I begin learning android app development, it is neither clean nor the best reference for study or smth relevant
+- This project is my first-big-project when I started learning android app development, it is neither clean nor the best reference for study or smth relevant
 - You should not view the source code for the sake of humanity :)
 
 ## Time Consuming
